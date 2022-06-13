@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?><TestSessionContainer xmlns="http://www.codecover.org/xml/testsession-container" Date="1655127588256" TestSessionContainerId="de609b1c-78e5-418d-9fe2-a94dcdb3deba" version="1.0">
+<SrcFileList>
+<SrcFile Content="package Negozio;&#13;&#10;&#13;&#10;public class Negozio {&#13;&#10;&#9;public int prodotti[];&#13;&#10;&#9;public double costi[];&#13;&#10;&#9;public double clienti[];&#13;&#10;&#9;public double guadagno;&#13;&#10;&#9;&#13;&#10;&#9;public Negozio() {&#13;&#10;&#9;&#9;prodotti = new int[10];&#13;&#10;&#9;&#9;costi = new double[10];&#13;&#10;&#9;&#9;clienti = new double[5];&#13;&#10;&#9;&#9;for(int i = 0; i &lt; prodotti.length; i++) {&#13;&#10;&#9;&#9;&#9;prodotti[i] = 10;&#13;&#10;&#9;&#9;&#9;costi[i] = 5.0 * (i + 1);&#13;&#10;&#9;&#9;&#9;//System.out.println(costi[i]);&#13;&#10;&#9;&#9;}&#13;&#10;&#9;&#9;&#13;&#10;&#9;&#9;for(int i = 0; i &lt; clienti.length; i++) {&#13;&#10;&#9;&#9;&#9;clienti[i] = 100.0;&#13;&#10;&#9;&#9;}&#13;&#10;&#9;&#9;&#13;&#10;&#9;&#9;&#13;&#10;&#9;}&#13;&#10;&#9;&#13;&#10;&#9;public boolean compra(int indP, int indC) {&#13;&#10;&#9;&#9;if(indP &lt; 0 || indP &gt; 9 || indC &lt; 0 || indC &gt; 4 || prodotti[indP] == 0 || clienti[indC] &lt; costi[indP])&#13;&#10;&#9;&#9;&#9;return false;&#13;&#10;&#9;&#9;prodotti[indP] -= 1;&#13;&#10;&#9;&#9;clienti[indC] -= costi[indP];&#13;&#10;&#9;&#9;return true;&#13;&#10;&#9;}&#13;&#10;&#9;&#13;&#10;&#9;public boolean riempiProdotto(int indP) {&#13;&#10;&#9;&#9;if(indP &lt; 0 || indP &gt; 9 || prodotti[indP] == 10)&#13;&#10;&#9;&#9;&#9;return false;&#13;&#10;&#9;&#9;prodotti[indP] = 10;&#13;&#10;&#9;&#9;return true;&#13;&#10;&#9;}&#13;&#10;&#13;&#10;}&#13;&#10;" Filename="Negozio.java" Intrnl_Id="1"/>
+</SrcFileList>
+<CritList>
+<CritListEntry Name="org.codecover.model.utils.criteria.LoopCoverage" PluginName="org.codecover"/>
+<CritListEntry Name="org.codecover.model.utils.criteria.ConditionCoverage" PluginName="org.codecover"/>
+<CritListEntry Name="org.codecover.model.utils.criteria.BranchCoverage" PluginName="org.codecover"/>
+<CritListEntry Name="org.codecover.model.utils.criteria.StatementCoverage" PluginName="org.codecover"/>
+</CritList>
+<BoolOpList>
+<BoolOp Arity="2" Intrnl_Id="2" Name="conditional or (||)">
+<BoolAssgnmntBoolMapList>
+<MapEntry BoolAssgnmnt="00" Value="false"/>
+<MapEntry BoolAssgnmnt="01" Value="true"/>
+<MapEntry BoolAssgnmnt="12" Value="true"/>
+</BoolAssgnmntBoolMapList>
+</BoolOp>
+</BoolOpList>
+<HierarchyLvlTypeList>
+<HierarchyLvlType EnglishName="package" IntrnlName="package" Intrnl_Id="3"/>
+<HierarchyLvlType EnglishName="method" IntrnlName="method" Intrnl_Id="4"/>
+<HierarchyLvlType EnglishName="class" IntrnlName="class" Intrnl_Id="5"/>
+<HierarchyLvlType EnglishName="default package" IntrnlName="default package" Intrnl_Id="6"/>
+</HierarchyLvlTypeList>
+<MASTRoot>
+<HierarchyLvl HierarchyLvlId="185" HierarchyLvlTypeId="6" Intrnl_Id="7" Name="default package">
+<Header/>
+<LocList/>
+<HierarchyLvl HierarchyLvlId="184" HierarchyLvlTypeId="3" Intrnl_Id="8" Name="Negozio">
+<Header/>
+<LocList/>
+<HierarchyLvl HierarchyLvlId="183" HierarchyLvlTypeId="5" Intrnl_Id="9" Name="Negozio">
+<Header>
+<Loc EndOffset="40" SrcFileId="1" StartOffset="20"/>
+</Header>
+<LocList>
+<Loc EndOffset="896" SrcFileId="1" StartOffset="20"/>
+</LocList>
+<HierarchyLvl HierarchyLvlId="180" HierarchyLvlTypeId="4" Intrnl_Id="10" Name="Negozio">
+<Header>
+<Loc EndOffset="167" SrcFileId="1" StartOffset="151"/>
+</Header>
+<LocList>
+<Loc EndOffset="480" SrcFileId="1" StartOffset="151"/>
+</LocList>
+<StmntSeq Intrnl_Id="11">
+<LocList>
+<Loc EndOffset="196" SrcFileId="1" StartOffset="173"/>
+<Loc EndOffset="223" SrcFileId="1" StartOffset="200"/>
+<Loc EndOffset="251" SrcFileId="1" StartOffset="227"/>
+<Loc EndOffset="390" SrcFileId="1" StartOffset="255"/>
+<Loc EndOffset="468" SrcFileId="1" StartOffset="398"/>
+</LocList>
+<BasicStmnt CovItemId="S1" CovItemPrefix="Negozio.Negozio.java" Intrnl_Id="12">
+<LocList>
+<Loc EndOffset="196" SrcFileId="1" StartOffset="173"/>
+</LocList>
+</BasicStmnt>
+<BasicStmnt CovItemId="S2" CovItemPrefix="Negozio.Negozio.java" Intrnl_Id="13">
+<LocList>
+<Loc EndOffset="223" SrcFileId="1" StartOffset="200"/>
+</LocList>
+</BasicStmnt>
+<BasicStmnt CovItemId="S3" CovItemPrefix="Negozio.Negozio.java" Intrnl_Id="14">
+<LocList>
+<Loc EndOffset="251" SrcFileId="1" StartOffset="227"/>
+</LocList>
+</BasicStmnt>
+<LoopStmnt CovItemId="S4" CovItemPrefix="Negozio.Negozio.java" Intrnl_Id="15" MltplExecId="L1-2" MltplExecPrefix="Negozio.Negozio.java" NvrExecId="L1-0" NvrExecPrefix="Negozio.Negozio.java" OnceExecutedId="L1-1" OnceExecutedPrefix="Negozio.Negozio.java" OptBodyExec="true">
+<StmntSeq Intrnl_Id="16">
+<LocList>
+<Loc EndOffset="319" SrcFileId="1" StartOffset="302"/>
+<Loc EndOffset="349" SrcFileId="1" StartOffset="324"/>
+</LocList>
+<BasicStmnt CovItemId="S5" CovItemPrefix="Negozio.Negozio.java" Intrnl_Id="17">
+<LocList>
+<Loc EndOffset="319" SrcFileId="1" StartOffset="302"/>
+</LocList>
+</BasicStmnt>
+<BasicStmnt CovItemId="S6" CovItemPrefix="Negozio.Negozio.java" Intrnl_Id="18">
+<LocList>
+<Loc EndOffset="349" SrcFileId="1" StartOffset="324"/>
+</LocList>
+</BasicStmnt>
+</StmntSeq>
+<Keyword EndOffset="258" SrcFileId="1" StartOffset="255"/>
+<LocList>
+<Loc EndOffset="390" SrcFileId="1" StartOffset="255"/>
+</LocList>
+<RootTerm CovItemId="C1" CovItemPrefix="Negozio.Negozio.java" Intrnl_Id="19">
+<BasicBoolTerm Intrnl_Id="20">
+<LocList>
+<Loc EndOffset="289" SrcFileId="1" StartOffset="270"/>
+</LocList>
+</BasicBoolTerm>
+</RootTerm>
+</LoopStmnt>
+<LoopStmnt CovItemId="S7" CovItemPrefix="Negozio.Negozio.java" Intrnl_Id="21" MltplExecId="L2-2" MltplExecPrefix="Negozio.Negozio.java" NvrExecId="L2-0" NvrExecPrefix="Negozio.Negozio.java" OnceExecutedId="L2-1" OnceExecutedPrefix="Negozio.Negozio.java" OptBodyExec="true">
+<StmntSeq Intrnl_Id="22">
+<LocList>
+<Loc EndOffset="463" SrcFileId="1" StartOffset="444"/>
+</LocList>
+<BasicStmnt CovItemId="S8" CovItemPrefix="Negozio.Negozio.java" Intrnl_Id="23">
+<LocList>
+<Loc EndOffset="463" SrcFileId="1" StartOffset="444"/>
+</LocList>
+</BasicStmnt>
+</StmntSeq>
+<Keyword EndOffset="401" SrcFileId="1" StartOffset="398"/>
+<LocList>
+<Loc EndOffset="468" SrcFileId="1" StartOffset="398"/>
+</LocList>
+<RootTerm CovItemId="C2" CovItemPrefix="Negozio.Negozio.java" Intrnl_Id="24">
+<BasicBoolTerm Intrnl_Id="25">
+<LocList>
+<Loc EndOffset="431" SrcFileId="1" StartOffset="413"/>
+</LocList>
+</BasicBoolTerm>
+</RootTerm>
+</LoopStmnt>
+</StmntSeq>
+</HierarchyLvl>
+<HierarchyLvl HierarchyLvlId="181" HierarchyLvlTypeId="4" Intrnl_Id="26" Name="compra">
+<Header>
+<Loc EndOffset="527" SrcFileId="1" StartOffset="486"/>
+</Header>
+<LocList>
+<Loc EndOffset="730" SrcFileId="1" StartOffset="486"/>
+</LocList>
+<StmntSeq Intrnl_Id="27">
+<LocList>
+<Loc EndOffset="653" SrcFileId="1" StartOffset="533"/>
+<Loc EndOffset="677" SrcFileId="1" StartOffset="657"/>
+<Loc EndOffset="710" SrcFileId="1" StartOffset="681"/>
+<Loc EndOffset="726" SrcFileId="1" StartOffset="714"/>
+</LocList>
+<CondStmnt CovItemId="S9" CovItemPrefix="Negozio.Negozio.java" Intrnl_Id="28">
+<Branch CovItemId="B1" CovItemPrefix="Negozio.Negozio.java" Implct="false" Intrnl_Id="29">
+<Cond/>
+<LocList>
+<Loc EndOffset="653" SrcFileId="1" StartOffset="640"/>
+</LocList>
+<StmntSeq Intrnl_Id="30">
+<LocList>
+<Loc EndOffset="653" SrcFileId="1" StartOffset="640"/>
+</LocList>
+<BasicStmnt CovItemId="S10" CovItemPrefix="Negozio.Negozio.java" Intrnl_Id="31">
+<LocList>
+<Loc EndOffset="653" SrcFileId="1" StartOffset="640"/>
+</LocList>
+</BasicStmnt>
+</StmntSeq>
+</Branch>
+<Branch CovItemId="B2" CovItemPrefix="Negozio.Negozio.java" Implct="true" Intrnl_Id="32">
+<Cond/>
+<LocList/>
+<StmntSeq Intrnl_Id="33">
+<LocList/>
+</StmntSeq>
+</Branch>
+<Keyword EndOffset="535" SrcFileId="1" StartOffset="533"/>
+<LocList>
+<Loc EndOffset="653" SrcFileId="1" StartOffset="533"/>
+</LocList>
+<RootTerm CovItemId="C3" CovItemPrefix="Negozio.Negozio.java" Intrnl_Id="34">
+<OpTerm BooleanOpId="2" Intrnl_Id="35">
+<OpTerm BooleanOpId="2" Intrnl_Id="36">
+<OpTerm BooleanOpId="2" Intrnl_Id="37">
+<OpTerm BooleanOpId="2" Intrnl_Id="38">
+<OpTerm BooleanOpId="2" Intrnl_Id="39">
+<BasicBoolTerm Intrnl_Id="40">
+<LocList>
+<Loc EndOffset="544" SrcFileId="1" StartOffset="536"/>
+</LocList>
+</BasicBoolTerm>
+<BasicBoolTerm Intrnl_Id="41">
+<LocList>
+<Loc EndOffset="556" SrcFileId="1" StartOffset="548"/>
+</LocList>
+</BasicBoolTerm>
+<LocList>
+<Loc EndOffset="547" SrcFileId="1" StartOffset="545"/>
+</LocList>
+</OpTerm>
+<BasicBoolTerm Intrnl_Id="42">
+<LocList>
+<Loc EndOffset="568" SrcFileId="1" StartOffset="560"/>
+</LocList>
+</BasicBoolTerm>
+<LocList>
+<Loc EndOffset="559" SrcFileId="1" StartOffset="557"/>
+</LocList>
+</OpTerm>
+<BasicBoolTerm Intrnl_Id="43">
+<LocList>
+<Loc EndOffset="580" SrcFileId="1" StartOffset="572"/>
+</LocList>
+</BasicBoolTerm>
+<LocList>
+<Loc EndOffset="571" SrcFileId="1" StartOffset="569"/>
+</LocList>
+</OpTerm>
+<BasicBoolTerm Intrnl_Id="44">
+<LocList>
+<Loc EndOffset="603" SrcFileId="1" StartOffset="584"/>
+</LocList>
+</BasicBoolTerm>
+<LocList>
+<Loc EndOffset="583" SrcFileId="1" StartOffset="581"/>
+</LocList>
+</OpTerm>
+<BasicBoolTerm Intrnl_Id="45">
+<LocList>
+<Loc EndOffset="634" SrcFileId="1" StartOffset="607"/>
+</LocList>
+</BasicBoolTerm>
+<LocList>
+<Loc EndOffset="606" SrcFileId="1" StartOffset="604"/>
+</LocList>
+</OpTerm>
+</RootTerm>
+</CondStmnt>
+<BasicStmnt CovItemId="S11" CovItemPrefix="Negozio.Negozio.java" Intrnl_Id="46">
+<LocList>
+<Loc EndOffset="677" SrcFileId="1" StartOffset="657"/>
+</LocList>
+</BasicStmnt>
+<BasicStmnt CovItemId="S12" CovItemPrefix="Negozio.Negozio.java" Intrnl_Id="47">
+<LocList>
+<Loc EndOffset="710" SrcFileId="1" StartOffset="681"/>
+</LocList>
+</BasicStmnt>
+<BasicStmnt CovItemId="S13" CovItemPrefix="Negozio.Negozio.java" Intrnl_Id="48">
+<LocList>
+<Loc EndOffset="726" SrcFileId="1" StartOffset="714"/>
+</LocList>
+</BasicStmnt>
+</StmntSeq>
+</HierarchyLvl>
+<HierarchyLvl HierarchyLvlId="182" HierarchyLvlTypeId="4" Intrnl_Id="49" Name="riempiProdotto">
+<Header>
+<Loc EndOffset="775" SrcFileId="1" StartOffset="736"/>
+</Header>
+<LocList>
+<Loc EndOffset="891" SrcFileId="1" StartOffset="736"/>
+</LocList>
+<StmntSeq Intrnl_Id="50">
+<LocList>
+<Loc EndOffset="847" SrcFileId="1" StartOffset="781"/>
+<Loc EndOffset="871" SrcFileId="1" StartOffset="851"/>
+<Loc EndOffset="887" SrcFileId="1" StartOffset="875"/>
+</LocList>
+<CondStmnt CovItemId="S14" CovItemPrefix="Negozio.Negozio.java" Intrnl_Id="51">
+<Branch CovItemId="B3" CovItemPrefix="Negozio.Negozio.java" Implct="false" Intrnl_Id="52">
+<Cond/>
+<LocList>
+<Loc EndOffset="847" SrcFileId="1" StartOffset="834"/>
+</LocList>
+<StmntSeq Intrnl_Id="53">
+<LocList>
+<Loc EndOffset="847" SrcFileId="1" StartOffset="834"/>
+</LocList>
+<BasicStmnt CovItemId="S15" CovItemPrefix="Negozio.Negozio.java" Intrnl_Id="54">
+<LocList>
+<Loc EndOffset="847" SrcFileId="1" StartOffset="834"/>
+</LocList>
+</BasicStmnt>
+</StmntSeq>
+</Branch>
+<Branch CovItemId="B4" CovItemPrefix="Negozio.Negozio.java" Implct="true" Intrnl_Id="55">
+<Cond/>
+<LocList/>
+<StmntSeq Intrnl_Id="56">
+<LocList/>
+</StmntSeq>
+</Branch>
+<Keyword EndOffset="783" SrcFileId="1" StartOffset="781"/>
+<LocList>
+<Loc EndOffset="847" SrcFileId="1" StartOffset="781"/>
+</LocList>
+<RootTerm CovItemId="C4" CovItemPrefix="Negozio.Negozio.java" Intrnl_Id="57">
+<OpTerm BooleanOpId="2" Intrnl_Id="58">
+<OpTerm BooleanOpId="2" Intrnl_Id="59">
+<BasicBoolTerm Intrnl_Id="60">
+<LocList>
+<Loc EndOffset="792" SrcFileId="1" StartOffset="784"/>
+</LocList>
+</BasicBoolTerm>
+<BasicBoolTerm Intrnl_Id="61">
+<LocList>
+<Loc EndOffset="804" SrcFileId="1" StartOffset="796"/>
+</LocList>
+</BasicBoolTerm>
+<LocList>
+<Loc EndOffset="795" SrcFileId="1" StartOffset="793"/>
+</LocList>
+</OpTerm>
+<BasicBoolTerm Intrnl_Id="62">
+<LocList>
+<Loc EndOffset="828" SrcFileId="1" StartOffset="808"/>
+</LocList>
+</BasicBoolTerm>
+<LocList>
+<Loc EndOffset="807" SrcFileId="1" StartOffset="805"/>
+</LocList>
+</OpTerm>
+</RootTerm>
+</CondStmnt>
+<BasicStmnt CovItemId="S16" CovItemPrefix="Negozio.Negozio.java" Intrnl_Id="63">
+<LocList>
+<Loc EndOffset="871" SrcFileId="1" StartOffset="851"/>
+</LocList>
+</BasicStmnt>
+<BasicStmnt CovItemId="S17" CovItemPrefix="Negozio.Negozio.java" Intrnl_Id="64">
+<LocList>
+<Loc EndOffset="887" SrcFileId="1" StartOffset="875"/>
+</LocList>
+</BasicStmnt>
+</StmntSeq>
+</HierarchyLvl>
+</HierarchyLvl>
+</HierarchyLvl>
+</HierarchyLvl>
+</MASTRoot>
+</TestSessionContainer>
